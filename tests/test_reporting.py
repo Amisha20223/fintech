@@ -11,7 +11,7 @@ def setup():
     yield driver
     driver.quit() 
      
-     
+       
 def test_view_reports(setup):
     driver = setup
     driver.get("http://your-fintech-application-url/reports")
