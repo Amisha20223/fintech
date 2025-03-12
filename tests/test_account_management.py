@@ -12,7 +12,7 @@ def setup():
     driver.quit()
 
 def test_view_account_details(setup):
-    driver = setup
+    driver = setup 
     driver.get("http://your-fintech-application-url/account")
     
     assert "Account Details" in driver.page_source
