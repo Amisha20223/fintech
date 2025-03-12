@@ -9,8 +9,9 @@ def setup():
     driver.find_element_by_id("password").send_keys("password")
     driver.find_element_by_id("login").click()
     yield driver
-    driver.quit()
-
+    driver.quit() 
+     
+       
 def test_view_reports(setup):
     driver = setup
     driver.get("http://your-fintech-application-url/reports")
